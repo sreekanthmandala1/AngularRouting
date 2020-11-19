@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Assignments</h2>
+
+  <div class="row">
+    <div class="col-3">
+      <input class="form-control" [(ngModel)]="userName"  />
+      {{ userName }}
+    </div>
+    <div class="col-3">
+      <input class="form-control">
+      <p>{{userName}}</p>
+    </div>
+    <div class="col-3">
+      <input class="form-control" [(ngModel)]="userName">
+      {{userName}}
+      <button class="btn btn-primary" [disabled]="userName=== ''">
+        click
+      </button>
+    </div>
+    <div class="col-3">
+      <input class="form-control" [(ngModel)]="Name">
+      {{Name}}
+      <button class="btn btn-primary" [disabled]="Name=== ''" (click)="Name = ''">
+        click
+      </button>
+    </div>
+  </div>
+</div>

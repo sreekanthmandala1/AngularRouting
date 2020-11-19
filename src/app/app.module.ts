@@ -12,11 +12,13 @@ import { NavigateComponent } from './navigate/navigate.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 import { CommonModule } from '@angular/common';
 import {FormsModule} from '@angular/forms';
+import { PagefourComponent } from './pagefour/pagefour.component';
 
 const appRoutes: Routes = [
   {path: 'pageone', component: PageOneComponent},
   {path: 'pagetwo', component: PageTwoComponent},
   {path: 'pagethree', component: PageThreeComponent},
+  {path: 'pagefour', component: PagefourComponent},
 ];
 
 @NgModule({
@@ -27,7 +29,8 @@ const appRoutes: Routes = [
     PageTwoComponent,
     PageThreeComponent,
     NavigateComponent,
-    StructuralDirectivesComponent
+    StructuralDirectivesComponent,
+    PagefourComponent
   ],
   imports: [
 
