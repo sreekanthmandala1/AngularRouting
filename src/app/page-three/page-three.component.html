@@ -1,1 +1,20 @@
-<p>page-three works!</p>
+<br />
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <input class="form-control" (input)="onEnterValue($event)"/>
+      <button class="btn btn-warning" (click)="onEnterClick()">event</button>
+      {{ServerName}}
+    </div>
+    <div class="col-4">
+      <input class="form-control" [(ngModel)]="serverName"/>
+      {{serverName}}
+      <button class="btn btn-warning">event</button>
+    </div>
+    <div class="col-4">
+      <input class="form-control" [(ngModel)]="onlyServer">
+      <button class="btn btn-primary" (click)="onOnlyServer()">combining all</button>
+      {{onlyName}}
+    </div>
+  </div>
+</div>

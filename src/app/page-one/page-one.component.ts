@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page-one.component.css']
 })
 export class PageOneComponent implements OnInit {
-
+  Server= "server is not created";
+  serverCreation(){
+    this.Server="Server was created";
+  }
   constructor() { }
 
   ngOnInit(): void {

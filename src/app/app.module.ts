@@ -8,10 +8,15 @@ import { PageOneComponent } from './page-one/page-one.component';
 import { PageTwoComponent } from './page-two/page-two.component';
 import { PageThreeComponent } from './page-three/page-three.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavigateComponent } from './navigate/navigate.component';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { CommonModule } from '@angular/common';
+import {FormsModule} from '@angular/forms';
 
 const appRoutes: Routes = [
   {path: 'pageone', component: PageOneComponent},
   {path: 'pagetwo', component: PageTwoComponent},
+  {path: 'pagethree', component: PageThreeComponent},
 ];
 
 @NgModule({
@@ -20,12 +25,17 @@ const appRoutes: Routes = [
     HomeComponent,
     PageOneComponent,
     PageTwoComponent,
-    PageThreeComponent
+    PageThreeComponent,
+    NavigateComponent,
+    StructuralDirectivesComponent
   ],
   imports: [
+
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
