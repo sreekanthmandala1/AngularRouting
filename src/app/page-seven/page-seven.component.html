@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <label>Server Name</label>
+      <input class="form-control" [(ngModel)]="addServer" />
+      <label>Server Content</label>
+      <input class="form-control" [(ngModel)]="blueprintServer" />
+      <div style="margin: 10px 0px 10px 0px">
+        <button
+          class="btn btn-primary"
+          style="margin: 0px 20px 0px 0px"
+          (click)="onAddServer()"
+        >
+          Add Server
+        </button>
+        <button class="btn btn-primary" (click)="onAddBlueprintServer()">
+          Add blueprint server
+        </button>
+      </div>
+      <div
+        class="card"
+        style="margin: 0px 0px 10px 0px"
+        *ngFor="let server of servers"
+      >
+        <div class="card-header">Server</div>
+
+        <div class="card-body">{{ server }}</div>
+
+        <div
+          class="card"
+          style="margin: 0px 0px 10px 0px"
+          *ngFor="let bp of bpServer"
+        >
+          <div class="card-header">blueprintServer</div>
+
+          <div class="card-body">{{ bp }}</div>
+        </div>
+      </div>
+      <div class="col-6"></div>
+    </div>
+  </div>
+</div>

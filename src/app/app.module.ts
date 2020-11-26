@@ -13,12 +13,18 @@ import { StructuralDirectivesComponent } from './structural-directives/structura
 import { CommonModule } from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import { PagefourComponent } from './pagefour/pagefour.component';
+import { PageFiveComponent } from './page-five/page-five.component';
+import { PageSixComponent } from './page-six/page-six.component';
+import { PageSevenComponent } from './page-seven/page-seven.component';
 
 const appRoutes: Routes = [
   {path: 'pageone', component: PageOneComponent},
   {path: 'pagetwo', component: PageTwoComponent},
   {path: 'pagethree', component: PageThreeComponent},
   {path: 'pagefour', component: PagefourComponent},
+  {path: 'pagefive', component: PageFiveComponent},
+  {path: 'pagesix', component: PageSixComponent},
+  {path: 'pageseven', component: PageSevenComponent},
 ];
 
 @NgModule({
@@ -30,7 +36,10 @@ const appRoutes: Routes = [
     PageThreeComponent,
     NavigateComponent,
     StructuralDirectivesComponent,
-    PagefourComponent
+    PagefourComponent,
+    PageFiveComponent,
+    PageSixComponent,
+    PageSevenComponent
   ],
   imports: [
 
