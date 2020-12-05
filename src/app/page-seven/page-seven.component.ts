@@ -10,12 +10,34 @@ export class PageSevenComponent implements OnInit {
   servers = [];
   blueprintServer = "";
   bpServer=[];
+
+  //column 2
+  serverName = "";
+  blueprintName = "";
+  serverElements=[];
+
   onAddServer() {
     this.servers.push(this.addServer);
   }
   onAddBlueprintServer(){
     this.bpServer.push(this.blueprintServer);
   }
+
+  onAddServerPop(){
+    this.serverElements.push({
+      type:'server',
+      name:this.serverName,
+      content:this.blueprintName
+    });
+  }
+  onAddBlueprintPop(){
+    this.serverElements.push({
+      type:'blueprint',
+      name:this.serverName,
+      content:this.blueprintName
+    });
+  }
+
   constructor() {}
 
   ngOnInit(): void {}

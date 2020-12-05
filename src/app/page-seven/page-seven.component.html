@@ -23,20 +23,38 @@
         *ngFor="let server of servers"
       >
         <div class="card-header">Server</div>
-
         <div class="card-body">{{ server }}</div>
-
         <div
           class="card"
           style="margin: 0px 0px 10px 0px"
           *ngFor="let bp of bpServer"
         >
           <div class="card-header">blueprintServer</div>
-
           <div class="card-body">{{ bp }}</div>
         </div>
       </div>
-      <div class="col-6"></div>
+    </div>
+    <div class="col-6">
+      <label>Server Name</label>
+      <input class="form-control" [(ngModel)]="serverName"/>
+      <label>Server Content</label>
+      <input class="form-control" style="margin-bottom: 10px" [(ngModel)]="blueprintName" />
+      <button class="btn btn-primary" style="margin: 0px 20px 0px 0px" (click)="onAddServerPop()">
+        Add server
+      </button>
+      <button class="btn btn-primary" (click)="onAddBlueprintPop()">Add Blueprint</button>
+      <div class="panel panel-default" *ngFor="let element of serverElements">
+        <div class="panel-heading">
+          {{element.name}}
+        </div>
+        <div class="panel-body">
+          <p>
+            <strong *ngIf="element.type==='server'" style="color:red">{{element.content}}</strong>
+            <em *ngIf="element.type==='blueprint'" style="color:blue">{{element.content}}</em>
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
