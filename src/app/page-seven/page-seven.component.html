@@ -35,26 +35,9 @@
       </div>
     </div>
     <div class="col-6">
-      <label>Server Name</label>
-      <input class="form-control" [(ngModel)]="serverName"/>
-      <label>Server Content</label>
-      <input class="form-control" style="margin-bottom: 10px" [(ngModel)]="blueprintName" />
-      <button class="btn btn-primary" style="margin: 0px 20px 0px 0px" (click)="onAddServerPop()">
-        Add server
-      </button>
-      <button class="btn btn-primary" (click)="onAddBlueprintPop()">Add Blueprint</button>
-      <div class="panel panel-default" *ngFor="let element of serverElements">
-        <div class="panel-heading">
-          {{element.name}}
-        </div>
-        <div class="panel-body">
-          <p>
-            <strong *ngIf="element.type==='server'" style="color:red">{{element.content}}</strong>
-            <em *ngIf="element.type==='blueprint'" style="color:blue">{{element.content}}</em>
-          </p>
-        </div>
-      </div>
 
+      <app-page-seven-cockpit></app-page-seven-cockpit>
+      <app-page-seven-server-element *ngFor="let element of serverElements" [element]="element"></app-page-seven-server-element>
     </div>
   </div>
 </div>

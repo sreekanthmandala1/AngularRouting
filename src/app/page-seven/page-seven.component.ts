@@ -12,9 +12,8 @@ export class PageSevenComponent implements OnInit {
   bpServer=[];
 
   //column 2
-  serverName = "";
-  blueprintName = "";
-  serverElements=[];
+
+  serverElements=[{type:'server', name:'testServer', content:'just a test!'}];
 
   onAddServer() {
     this.servers.push(this.addServer);
@@ -23,20 +22,7 @@ export class PageSevenComponent implements OnInit {
     this.bpServer.push(this.blueprintServer);
   }
 
-  onAddServerPop(){
-    this.serverElements.push({
-      type:'server',
-      name:this.serverName,
-      content:this.blueprintName
-    });
-  }
-  onAddBlueprintPop(){
-    this.serverElements.push({
-      type:'blueprint',
-      name:this.serverName,
-      content:this.blueprintName
-    });
-  }
+
 
   constructor() {}
 

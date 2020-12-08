@@ -16,6 +16,9 @@ import { PagefourComponent } from './pagefour/pagefour.component';
 import { PageFiveComponent } from './page-five/page-five.component';
 import { PageSixComponent } from './page-six/page-six.component';
 import { PageSevenComponent } from './page-seven/page-seven.component';
+import { PageSevenCockpitComponent } from './page-seven-cockpit/page-seven-cockpit.component';
+
+import { PageSevenServerElementComponent } from './page-seven-server-element/page-seven-server-element.component';
 
 const appRoutes: Routes = [
   {path: 'pageone', component: PageOneComponent},
@@ -39,7 +42,9 @@ const appRoutes: Routes = [
     PagefourComponent,
     PageFiveComponent,
     PageSixComponent,
-    PageSevenComponent
+    PageSevenComponent,
+    PageSevenCockpitComponent,
+    PageSevenServerElementComponent
   ],
   imports: [
 
