@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-page-seven-cockpit',
@@ -9,21 +9,20 @@ export class PageSevenCockpitComponent implements OnInit {
 
   serverName = "";
   blueprintName = "";
-  serverElements: any;
+  newServerName: '';
+  newServerContent: '';
+  @Output() serverCreated= new EventEmitter<{serverName:string,serverContent:string}>();
+  @Output() blueprintCreated = new EventEmitter<{serverName:string,serverContent:string}>();
+
+
 
   onAddServerPop(){
-     this.serverElements.push({
-       type:'server',
-      name:this.serverName,
-    content:this.blueprintName
-     });
+     this.serverCreated.emit({serverName:this.newServerName,
+    serverContent:this.newServerContent});
   }
   onAddBlueprintPop(){
-     this.serverElements.push({
-       type:'blueprint',
-       name:this.serverName,
-       content:this.blueprintName
-    });
+    this.blueprintCreated.emit({serverName:this.newServerName,
+      serverContent:this.newServerContent});
   }
   constructor() { }
 

@@ -36,8 +36,9 @@
     </div>
     <div class="col-6">
 
-      <app-page-seven-cockpit></app-page-seven-cockpit>
-      <app-page-seven-server-element *ngFor="let element of serverElements" [element]="element"></app-page-seven-server-element>
+      <app-page-seven-cockpit (serverCreated)="onServerAdded($event)"
+      (blueprintCreated)="onBlueprintAdded($event)"></app-page-seven-cockpit>
+      <app-page-seven-server-element *ngFor="let element of serverElements" [srvElement]="element"></app-page-seven-server-element>
     </div>
   </div>
 </div>
