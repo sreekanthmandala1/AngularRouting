@@ -19,6 +19,11 @@ import { PageSevenComponent } from './page-seven/page-seven.component';
 import { PageSevenCockpitComponent } from './page-seven-cockpit/page-seven-cockpit.component';
 
 import { PageSevenServerElementComponent } from './page-seven-server-element/page-seven-server-element.component';
+import { PageEightComponent } from './page-eight/page-eight.component';
+import { CockpitComponent } from './page-eight/cockpit/cockpit.component';
+import { ServerElementComponent } from './page-eight/server-element/server-element.component';
+
+
 
 const appRoutes: Routes = [
   {path: 'pageone', component: PageOneComponent},
@@ -28,6 +33,7 @@ const appRoutes: Routes = [
   {path: 'pagefive', component: PageFiveComponent},
   {path: 'pagesix', component: PageSixComponent},
   {path: 'pageseven', component: PageSevenComponent},
+  {path: 'pageeight', component: PageEightComponent},
 ];
 
 @NgModule({
@@ -44,7 +50,11 @@ const appRoutes: Routes = [
     PageSixComponent,
     PageSevenComponent,
     PageSevenCockpitComponent,
-    PageSevenServerElementComponent
+    PageSevenServerElementComponent,
+    PageEightComponent,
+    CockpitComponent,
+    ServerElementComponent,
+
   ],
   imports: [
 
