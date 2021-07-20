@@ -1,15 +1,27 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { User } from '../models/user';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UsersService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http:HttpClient) { }
+  getUsers():Observable<User> {
+    const headers2 = new HttpHeaders({
+      'content-type': 'application/json',
+      authenticationToken: '12344454',
+    });
 
-  getUsers(){
-   return this.http.get('https://jsonplaceholder.typicode.com/users')
+    const params2 = new HttpParams()
+      .set('pageSize', '10')
+      .set('pageOptions', '100');
+
+    return this.http.get<User>('https://jsonplaceholder.typicode.com/users', {
+      headers: headers2, params:params2
+    });
     // const users = [
     //   {
     //     name:'sreekanth',
