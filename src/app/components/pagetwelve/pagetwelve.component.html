@@ -1,20 +1,28 @@
-<table>
+
+<div class="container" style="padding: 1%;">
+<button class="btn-warning" (click)= 'clicked()'>Toggle Images</button>
+<table class="table table-striped table-bordered table-dark">
+    <thead>
     <tr>
-        <th>Student Name</th>
+        <th>Student-Name</th>
         <th>Student Photo</th>
         <th>Student Id</th>
         <th>Student Result</th>
-    </tr>
+    </tr></thead>
+    <tbody>
     <tr *ngFor = 'let student of students'>
    <td> {{student.studentname}} </td>
    <td>
-       <img [src]='student.imagepath'
+       <img *ngIf = 'imgtgl;else hot'
+       [src]='student.imagepath'
        [style.width.px]='imagewidth'
        [style.height.px] = 'imageheight'
        [style.border-radius.px]='borderrad'>
+       <ng-template #hot><p><strong>Hidden image </strong></p></ng-template>
    </td>
    <td> {{student.studentid}} </td>
    <td> {{student.result}} </td>
 
-    </tr>
+    </tr></tbody>
 </table>
+</div>

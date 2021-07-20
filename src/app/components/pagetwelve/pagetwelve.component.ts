@@ -10,6 +10,7 @@ export class PagetwelveComponent implements OnInit {
   imagewidth:number = 50;
   imageheight:number = 50;
   borderrad:number = 50;
+  imgtgl:boolean = false
 
   constructor() { }
 
@@ -65,7 +66,9 @@ students:any[]= [
 
 ]
 
-
+clicked():void{
+this.imgtgl = !this.imgtgl
+}
 
 
 

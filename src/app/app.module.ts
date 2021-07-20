@@ -2,29 +2,30 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { PageOneComponent } from './page-one/page-one.component';
-import { PageTwoComponent } from './page-two/page-two.component';
-import { PageThreeComponent } from './page-three/page-three.component';
-import { RouterModule, Routes } from '@angular/router';
-import { NavigateComponent } from './navigate/navigate.component';
-import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+
 import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import {FormsModule} from '@angular/forms';
-import { PagefourComponent } from './pagefour/pagefour.component';
-import { PageFiveComponent } from './page-five/page-five.component';
-import { PageSixComponent } from './page-six/page-six.component';
-import { PageSevenComponent } from './page-seven/page-seven.component';
-import { PageSevenCockpitComponent } from './page-seven-cockpit/page-seven-cockpit.component';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
+import { NavigateComponent } from './components/navigate/navigate.component';
+import { CockpitComponent } from './components/page-eight/cockpit/cockpit.component';
+import { PageEightComponent } from './components/page-eight/page-eight.component';
+import { ServerElementComponent } from './components/page-eight/server-element/server-element.component';
+import { PageFiveComponent } from './components/page-five/page-five.component';
+import { PageNineComponent } from './components/page-nine/page-nine.component';
+import { PageOneComponent } from './components/page-one/page-one.component';
+import { PageSevenCockpitComponent } from './components/page-seven-cockpit/page-seven-cockpit.component';
+import { PageSevenServerElementComponent } from './components/page-seven-server-element/page-seven-server-element.component';
+import { PageSevenComponent } from './components/page-seven/page-seven.component';
+import { PageSixComponent } from './components/page-six/page-six.component';
+import { PageTenComponent } from './components/page-ten/page-ten.component';
+import { PageThreeComponent } from './components/page-three/page-three.component';
+import { PageTwoComponent } from './components/page-two/page-two.component';
+import { PageelevenComponent } from './components/pageeleven/pageeleven.component';
+import { PagefourComponent } from './components/pagefour/pagefour.component';
+import { PagetwelveComponent } from './components/pagetwelve/pagetwelve.component';
+import { StructuralDirectivesComponent } from './components/structural-directives/structural-directives.component';
 
-import { PageSevenServerElementComponent } from './page-seven-server-element/page-seven-server-element.component';
-import { PageEightComponent } from './page-eight/page-eight.component';
-import { CockpitComponent } from './page-eight/cockpit/cockpit.component';
-import { ServerElementComponent } from './page-eight/server-element/server-element.component';
-import { PageNineComponent } from './page-nine/page-nine.component';
-import { PageTenComponent } from './page-ten/page-ten.component';
-import { PageelevenComponent } from './pageeleven/pageeleven.component';
-import { PagetwelveComponent } from './pagetwelve/pagetwelve.component';
 
 
 
