@@ -7,12 +7,16 @@ import { UsersService } from 'src/app/services/users.service';
   styleUrls: ['./page-thirteen.component.css'],
 })
 export class PageThirteenComponent implements OnInit {
-  users:any;
+  people:any;
   constructor(private usersService : UsersService) { }
 
   ngOnInit(): void {
     this.usersService.getUsers().subscribe(data=>{
-      this.users=data;
+      console.log(data);
+      this.people=data;
+    },
+    (err)=>{
+      console.log("unable to get data from URL"+ err);
     })
     
     // this.users = this.usersService.getUsers();
