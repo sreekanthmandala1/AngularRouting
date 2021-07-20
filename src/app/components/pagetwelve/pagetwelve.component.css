@@ -3,3 +3,23 @@ table, th, td {
     padding: 20px;
     text-align: center;
   }
+  tr:hover {background-color:#f5f5f5;}
+  
+  div{
+    padding: 2%;
+  }
+
+  button {
+    padding: 1%;
+    border-radius: 7%;
+    height: 50px;
+
+  }
+  button:hover {
+    background-color: cyan;
+    padding: 1%;
+    border-radius: 7%;
+  }
+  table {
+  margin-top: 25px;
+  }
