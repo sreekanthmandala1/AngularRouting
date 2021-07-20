@@ -10,7 +10,7 @@ import { PageThreeComponent } from './page-three/page-three.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavigateComponent } from './navigate/navigate.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
-import { CommonModule } from '@angular/common';
+import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import { PagefourComponent } from './pagefour/pagefour.component';
 import { PageFiveComponent } from './page-five/page-five.component';
@@ -18,23 +18,17 @@ import { PageSixComponent } from './page-six/page-six.component';
 import { PageSevenComponent } from './page-seven/page-seven.component';
 import { PageSevenCockpitComponent } from './page-seven-cockpit/page-seven-cockpit.component';
 
+
 import { PageSevenServerElementComponent } from './page-seven-server-element/page-seven-server-element.component';
 import { PageEightComponent } from './page-eight/page-eight.component';
 import { CockpitComponent } from './page-eight/cockpit/cockpit.component';
 import { ServerElementComponent } from './page-eight/server-element/server-element.component';
+import { PageNineComponent } from './page-nine/page-nine.component';
+import { PageTenComponent } from './page-ten/page-ten.component';
 
 
 
-const appRoutes: Routes = [
-  {path: 'pageone', component: PageOneComponent},
-  {path: 'pagetwo', component: PageTwoComponent},
-  {path: 'pagethree', component: PageThreeComponent},
-  {path: 'pagefour', component: PagefourComponent},
-  {path: 'pagefive', component: PageFiveComponent},
-  {path: 'pagesix', component: PageSixComponent},
-  {path: 'pageseven', component: PageSevenComponent},
-  {path: 'pageeight', component: PageEightComponent},
-];
+
 
 @NgModule({
   declarations: [
@@ -54,6 +48,8 @@ const appRoutes: Routes = [
     PageEightComponent,
     CockpitComponent,
     ServerElementComponent,
+    PageNineComponent,
+    PageTenComponent,
 
   ],
   imports: [
@@ -61,7 +57,7 @@ const appRoutes: Routes = [
     CommonModule,
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule,
     FormsModule
   ],
   providers: [],
