@@ -15,24 +15,20 @@ import { PagefourComponent } from './components/pagefour/pagefour.component';
 import { PagetwelveComponent } from './components/pagetwelve/pagetwelve.component';
 
 
-
 const routes: Routes = [
-  {path: 'pageone', component: PageOneComponent},
-  {path: 'pagetwo', component: PageTwoComponent},
+  {path: 'pageone',   component: PageOneComponent},
+  {path: 'pagetwo',   component: PageTwoComponent},
   {path: 'pagethree', component: PageThreeComponent},
-  {path: 'pagefour', component: PagefourComponent},
-  {path: 'pagefive', component: PageFiveComponent},
-  {path: 'pagesix', component: PageSixComponent},
+  {path: 'pagefour',  component: PagefourComponent},
+  {path: 'pagefive',  component: PageFiveComponent},
+  {path: 'pagesix',   component: PageSixComponent},
   {path: 'pageseven', component: PageSevenComponent},
   {path: 'pageeight', component: PageEightComponent},
-  {path:'pagenine',component:PageNineComponent},
-  {path:'pageten',component:PageTenComponent},
-  {path:'pageeleven',component:PageelevenComponent},
-  {path:'pagetwelve',component:PagetwelveComponent},
-  {path:'pagethirteen',component:PageThirteenComponent}
-
-
-  
+  {path:'pagenine',   component: PageNineComponent},
+  {path:'pageten',    component: PageTenComponent},
+  {path:'pageeleven', component: PageelevenComponent},
+  {path:'pagetwelve', component: PagetwelveComponent},
+  {path:'pagethirteen', component:PageThirteenComponent}
 
 ];
 
