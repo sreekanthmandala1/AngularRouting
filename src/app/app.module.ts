@@ -25,6 +25,8 @@ import { CockpitComponent } from './page-eight/cockpit/cockpit.component';
 import { ServerElementComponent } from './page-eight/server-element/server-element.component';
 import { PageNineComponent } from './page-nine/page-nine.component';
 import { PageTenComponent } from './page-ten/page-ten.component';
+import { PageelevenComponent } from './pageeleven/pageeleven.component';
+import { PagetwelveComponent } from './pagetwelve/pagetwelve.component';
 
 
 
@@ -50,6 +52,8 @@ import { PageTenComponent } from './page-ten/page-ten.component';
     ServerElementComponent,
     PageNineComponent,
     PageTenComponent,
+    PageelevenComponent,
+    PagetwelveComponent,
 
   ],
   imports: [
