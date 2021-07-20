@@ -2,7 +2,11 @@
 <button class="btn btn-info" (click)="onlyOdd = !onlyOdd" [disabled]="!allowUnordered">click</button>
 
 <ul class="list-group" >
+<<<<<<< HEAD
   <div *ngIf="onlyOdd">
+=======
+  <div *ngIf="onlyOdd" >
+>>>>>>> fc775f8a30fb7b345924e464a952ad2b2a77d67e
     <li class="list-group-item" *ngFor="let odd of oddNumbers">{{ odd }}</li>
   </div>
 

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+<<<<<<< HEAD
 import { PageEightComponent } from './page-eight/page-eight.component';
 import { PageFiveComponent } from './page-five/page-five.component';
 import { PageNineComponent } from './page-nine/page-nine.component';
@@ -30,6 +31,13 @@ const routes: Routes = [
 
   
 
+=======
+import { PipesComponent } from './pipes/pipes.component';
+
+const routes: Routes = [
+  {path:'pipe', component:PipesComponent}
+ 
+>>>>>>> fc775f8a30fb7b345924e464a952ad2b2a77d67e
 ];
 
 @NgModule({
