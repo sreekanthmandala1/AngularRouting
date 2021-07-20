@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import { LinkifyPipe } from './pipes/link.pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -10,7 +9,7 @@ import { PageThreeComponent } from './page-three/page-three.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavigateComponent } from './navigate/navigate.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
-import { CommonModule } from '@angular/common';
+import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import { PagefourComponent } from './pagefour/pagefour.component';
 import { PageFiveComponent } from './page-five/page-five.component';
@@ -22,22 +21,12 @@ import { PageSevenServerElementComponent } from './page-seven-server-element/pag
 import { PageEightComponent } from './page-eight/page-eight.component';
 import { CockpitComponent } from './page-eight/cockpit/cockpit.component';
 import { ServerElementComponent } from './page-eight/server-element/server-element.component';
-import { PipesComponent } from './pipes/pipes.component';
-import { InputComponent } from './input/input.component';
-import { OutputComponent } from './output/output.component';
+import { PageNineComponent } from './page-nine/page-nine.component';
+import { PageTenComponent } from './page-ten/page-ten.component';
 
 
 
-const appRoutes: Routes = [
-  {path: 'pageone', component: PageOneComponent},
-  {path: 'pagetwo', component: PageTwoComponent},
-  {path: 'pagethree', component: PageThreeComponent},
-  {path: 'pagefour', component: PagefourComponent},
-  {path: 'pagefive', component: PageFiveComponent},
-  {path: 'pagesix', component: PageSixComponent},
-  {path: 'pageseven', component: PageSevenComponent},
-  {path: 'pageeight', component: PageEightComponent},
-];
+
 
 @NgModule({
   declarations: [
@@ -57,20 +46,18 @@ const appRoutes: Routes = [
     PageEightComponent,
     CockpitComponent,
     ServerElementComponent,
-    PipesComponent,
-    InputComponent,
-    OutputComponent,
+    PageNineComponent,
+    PageTenComponent,
 
   ],
   imports: [
-    // LinkifyPipe,
+
     CommonModule,
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule,
     FormsModule
   ],
-  // exports:[LinkifyPipe] ,
   providers: [],
   bootstrap: [AppComponent]
 })
