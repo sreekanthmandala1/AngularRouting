@@ -1,0 +1,63 @@
+<br><br><br><br>
+<button class="primary" (click)='toggleimages()' style="width: 170px;height:40px;margin-left: 150px;">Toggle
+    Images</button>
+
+<table>
+    <tr>
+        <th>Student photo</th>
+        <th>Student ID</th>
+        <th>Student Result</th>
+    </tr>
+    <tr>
+<td> <img *ngIf = 'showimg';else hidden
+            [src]='imgpath'>
+         </td>
+        <td>123456789</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td> <img *ngIf = 'showimg'
+            [src]='imgpath'> </td>
+        <td>123456788</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td> <img *ngIf = 'showimg'
+             [src]='imgpath'> </td>
+
+
+        <td>123456787</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td> <img *ngIf = 'showimg'
+            [src]='imgpath'> </td>
+
+
+        <td>123456784</td>
+        <td>Fail</td>
+    </tr>
+    <tr>
+        <td> <img *ngIf = 'showimg'
+            [src]='imgpath'> </td>
+
+
+        <td>123456786</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td> <img *ngIf = 'showimg'
+            [src]='imgpath'> </td>
+
+
+        <td>123456785</td>
+        <td>Fail</td>
+    </tr>
+    <tr>
+        <td> <img *ngIf = 'showimg'
+            [src]='imgpath'> </td>
+
+        <td>123456783</td>
+        <td>Fail</td>
+    </tr>
+</table>

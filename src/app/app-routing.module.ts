@@ -9,7 +9,10 @@ import { PageSixComponent } from './page-six/page-six.component';
 import { PageTenComponent } from './page-ten/page-ten.component';
 import { PageThreeComponent } from './page-three/page-three.component';
 import { PageTwoComponent } from './page-two/page-two.component';
+import { PageelevenComponent } from './pageeleven/pageeleven.component';
 import { PagefourComponent } from './pagefour/pagefour.component';
+import { PagetwelveComponent } from './pagetwelve/pagetwelve.component';
+
 
 const routes: Routes = [
   {path: 'pageone', component: PageOneComponent},
@@ -21,7 +24,11 @@ const routes: Routes = [
   {path: 'pageseven', component: PageSevenComponent},
   {path: 'pageeight', component: PageEightComponent},
   {path:'pagenine',component:PageNineComponent},
-  {path:'pageten',component:PageTenComponent}
+  {path:'pageten',component:PageTenComponent},
+  {path:'pageeleven',component:PageelevenComponent},
+  {path:'pagetwelve',component:PagetwelveComponent}
+
+  
 
 ];
 
