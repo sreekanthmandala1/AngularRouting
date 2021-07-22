@@ -7,5 +7,4 @@ export interface User {
   address:string;
   street:string;
   company:string;
-  
 }
